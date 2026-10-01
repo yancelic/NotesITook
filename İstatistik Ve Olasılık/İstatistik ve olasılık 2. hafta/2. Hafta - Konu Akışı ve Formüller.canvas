@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"node-header","type":"text","text":"# 📊 2. Hafta: İstatistik ve Olasılık\n## Verilerin Düzenlenmesi ve Merkezi Eğilim Ölçüleri\n\nBu tuval, 2. haftada işlenen konuların mantıksal akışını, formül geçişlerini ve sınav odaklı bağlantılarını görselleştirir.","x":-1100,"y":-800,"width":460,"height":220,"color":"6"},
+		{"id":"node-frekans-adimlar","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/01 - Frekans Tablosu Oluşturma Adımları.md","x":-100,"y":-880,"width":500,"height":380,"color":"4"},
+		{"id":"node-frekans-ornek","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/02 - Kapsamlı Frekans Tablosu Örneği (80 Öğrenci).md","x":730,"y":-880,"width":520,"height":380,"color":"4"},
+		{"id":"node-vize-kurallari","type":"text","text":"### 🎯 Vize Sınavı İçin Kritik Bilgiler\n\n1. **$Q_2 \\equiv \\text{Medyan} \\equiv P_{50}$**\n2. **Dağılım Çarpıklığı:**\n   * $\\text{Mod} < \\text{Medyan} < \\bar{X} \\implies$ **Sağa Çarpık**\n   * $\\bar{X} < \\text{Medyan} < \\text{Mod} \\implies$ **Sola Çarpık**\n3. **Ortalama Sıralaması (Altın Kural):**\n   * $$H \\le G \\le \\bar{X}$$\n   *(Harmonik $\\le$ Geometrik $\\le$ Aritmetik)*\n4. **Genişlikler:**\n   * Dağılım Genişliği (Ranj): $R = X_{\\max} - X_{\\min}$\n   * Çeyrekler Açıklığı: $IQR = Q_3 - Q_1$","x":980,"y":1200,"width":500,"height":340,"color":"6"},
+		{"id":"node-geo-harm","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/06 - Geometrik ve Harmonik Ortalama.md","x":-100,"y":1200,"width":520,"height":380,"color":"5"},
+		{"id":"node-aritmetik","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/03 - Aritmetik Ortalama.md","x":-1000,"y":120,"width":480,"height":380,"color":"1"},
+		{"id":"node-mod","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/05 - Mod (Tepe Değer).md","x":1040,"y":60,"width":500,"height":380,"color":"3"},
+		{"id":"node-medyan","type":"file","file":"Ders Notları/İstatistik Ve Olasılık/İstatistik ve olasılık 2. hafta/04 - Medyan ve Çeyreklikler (Q1, Q2, Q3).md","x":40,"y":120,"width":520,"height":380,"color":"2"}
+	],
+	"edges":[
+		{"id":"e-header-adim","fromNode":"node-header","fromSide":"right","toNode":"node-frekans-adimlar","toSide":"left","label":"1. Adım: Veri Gruplama"},
+		{"id":"e-adim-ornek","fromNode":"node-frekans-adimlar","fromSide":"right","toNode":"node-frekans-ornek","toSide":"left","label":"80 Kişilik Uygulama"},
+		{"id":"e-adim-aritmetik","fromNode":"node-frekans-adimlar","fromSide":"bottom","toNode":"node-aritmetik","toSide":"top","label":"Ağırlıklı Ortalama"},
+		{"id":"e-adim-medyan","fromNode":"node-frekans-adimlar","fromSide":"bottom","toNode":"node-medyan","toSide":"top","label":"Enterpolasyon & Çeyreklikler"},
+		{"id":"e-adim-mod","fromNode":"node-frekans-adimlar","fromSide":"bottom","toNode":"node-mod","toSide":"top","label":"Frekans Zirvesi"},
+		{"id":"e-aritmetik-medyan","fromNode":"node-aritmetik","fromSide":"right","toNode":"node-medyan","toSide":"left"},
+		{"id":"e-medyan-mod","fromNode":"node-medyan","fromSide":"right","toNode":"node-mod","toSide":"left","label":"Çarpıklık Analizi"},
+		{"id":"e-medyan-geo","fromNode":"node-medyan","fromSide":"bottom","toNode":"node-geo-harm","toSide":"top","label":"Diğer Ortalamalar"},
+		{"id":"e-geo-vize","fromNode":"node-geo-harm","fromSide":"right","toNode":"node-vize-kurallari","toSide":"left","label":"H ≤ G ≤ X̄"},
+		{"id":"e-mod-vize","fromNode":"node-mod","fromSide":"bottom","toNode":"node-vize-kurallari","toSide":"top","label":"Sınav Püf Noktaları"}
+	]
+}

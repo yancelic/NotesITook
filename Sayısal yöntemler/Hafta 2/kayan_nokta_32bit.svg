@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 690" width="1040" height="690" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="signGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="expGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="mantGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="glow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan -->
+  <rect width="1040" height="690" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+
+  <!-- Başlık Alanı -->
+  <g transform="translate(520, 50)" text-anchor="middle">
+    <text y="0" fill="#f8fafc" font-size="24" font-weight="800" letter-spacing="1.2">32-BİT KAYAN NOKTALI SAYI TEMSİLİ</text>
+    <text y="26" fill="#94a3b8" font-size="14" font-weight="500">Tek Duyarlılık (Single Precision / float32) — IEEE 754 &amp; Bilgisayar Bellek Mimarisi</text>
+  </g>
+
+  <!-- 32-Bit Yazmaç Çubuğu (Register Bar) -->
+  <g transform="translate(50, 128)">
+    <!-- Bit İndeks Etiketleri & Kılavuz Çizgileri -->
+    <!-- İşaret: Bit 31 -->
+    <text x="32.5" y="-12" text-anchor="middle" fill="#f87171" font-size="12" font-weight="700">Bit 31</text>
+    
+    <!-- Üs: Bit 30 ... Bit 23 -->
+    <text x="75" y="-12" fill="#60a5fa" font-size="12" font-weight="700">Bit 30</text>
+    <line x1="125" y1="-16" x2="305" y2="-16" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="355" y="-12" text-anchor="end" fill="#60a5fa" font-size="12" font-weight="700">Bit 23</text>
+    
+    <!-- Mantis: Bit 22 ... Bit 0 -->
+    <text x="375" y="-12" fill="#34d399" font-size="12" font-weight="700">Bit 22</text>
+    <line x1="425" y1="-16" x2="895" y2="-16" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <text x="940" y="-12" text-anchor="end" fill="#34d399" font-size="12" font-weight="700">Bit 0</text>
+
+    <!-- 1) İşaret Biti (1 bit) -->
+    <g filter="url(#glow)">
+      <rect x="0" y="0" width="65" height="80" rx="8" fill="url(#signGrad)" stroke="#fca5a5" stroke-width="2"/>
+      <text x="32.5" y="38" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="800">s</text>
+      <text x="32.5" y="62" text-anchor="middle" fill="#fee2e2" font-size="12" font-weight="600">1 Bit</text>
+    </g>
+
+    <!-- 2) Üs Alanı (8 bit) -->
+    <g filter="url(#glow)">
+      <rect x="75" y="0" width="280" height="80" rx="8" fill="url(#expGrad)" stroke="#93c5fd" stroke-width="2"/>
+      <text x="215" y="37" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="800">Kaydırılmış Üs (Exponent)</text>
+      <text x="215" y="61" text-anchor="middle" fill="#dbeafe" font-size="12" font-weight="600">8 Bit (Bias = 127)</text>
+    </g>
+
+    <!-- 3) Mantis Alanı (23 bit) -->
+    <g filter="url(#glow)">
+      <rect x="365" y="0" width="575" height="80" rx="8" fill="url(#mantGrad)" stroke="#6ee7b7" stroke-width="2"/>
+      <text x="652.5" y="37" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="800">Mantis / Kesir (Fraction)</text>
+      <text x="652.5" y="61" text-anchor="middle" fill="#d1fae5" font-size="12" font-weight="600">23 Bit (Gizli 1 ile etkin 24-Bit hassasiyet)</text>
+    </g>
+  </g>
+
+  <!-- 3 Bilgi Kartı -->
+  <g transform="translate(50, 248)">
+    <!-- Kart 1: İşaret -->
+    <rect x="0" y="0" width="295" height="155" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+    <circle cx="24" cy="28" r="8" fill="#ef4444"/>
+    <text x="42" y="33" fill="#f87171" font-size="16" font-weight="700">İşaret Biti (Sign - s)</text>
+    <text x="20" y="68" fill="#e2e8f0" font-size="13">• <tspan fill="#38bdf8" font-weight="bold">0</tspan> : Pozitif sayı (+)</text>
+    <text x="20" y="94" fill="#e2e8f0" font-size="13">• <tspan fill="#f43f5e" font-weight="bold">1</tspan> : Negatif sayı (-)</text>
+    <rect x="20" y="112" width="255" height="28" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="147" y="130" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="'Courier New', monospace">Formüldeki Değer: (-1)ˢ</text>
+
+    <!-- Kart 2: Üs -->
+    <rect x="322" y="0" width="295" height="155" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="346" cy="28" r="8" fill="#3b82f6"/>
+    <text x="364" y="33" fill="#60a5fa" font-size="16" font-weight="700">Üs (Exponent - e)</text>
+    <text x="342" y="68" fill="#e2e8f0" font-size="13">• Bias (Saptırma): <tspan fill="#fbbf24" font-weight="bold">127</tspan></text>
+    <text x="342" y="94" fill="#e2e8f0" font-size="13">• Saklanan Değer: <tspan fill="#60a5fa" font-weight="bold">e = m + 127</tspan></text>
+    <rect x="342" y="112" width="255" height="28" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="469" y="130" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="'Courier New', monospace">Çarpan: 2ᵉ⁻¹²⁷</text>
+
+    <!-- Kart 3: Mantis -->
+    <rect x="645" y="0" width="295" height="155" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="669" cy="28" r="8" fill="#10b981"/>
+    <text x="687" y="33" fill="#34d399" font-size="16" font-weight="700">Mantis (Significand - f)</text>
+    <text x="665" y="68" fill="#e2e8f0" font-size="13">• Anlamlı kesir basamakları</text>
+    <text x="665" y="94" fill="#e2e8f0" font-size="13">• IEEE 754: Gizli bit ile <tspan fill="#34d399" font-weight="bold">(1.f)₂</tspan></text>
+    <rect x="665" y="112" width="255" height="28" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="792" y="130" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="'Courier New', monospace">Teori: ½ ≤ q &lt; 1</text>
+  </g>
+
+  <!-- Örnek Dönüşüm Kutusu: -13.625 -->
+  <g transform="translate(50, 428)">
+    <rect x="0" y="0" width="940" height="118" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <text x="25" y="28" fill="#38bdf8" font-size="14" font-weight="700">💡 SOMUT ÖRNEK: x = -13,625 sayısının 32-bit kayan nokta karşılığı</text>
+    
+    <text x="25" y="54" fill="#cbd5e1" font-size="13">1) 13,625₁₀ = 1101,101₂ = <tspan fill="#fbbf24" font-weight="bold">1,101101₂ × 2³</tspan>  (Üs m = 3  ➔  e = 3 + 127 = 130 = <tspan fill="#60a5fa">10000010₂</tspan>)</text>
+    
+    <g transform="translate(25, 68)">
+      <!-- 1 bit işaret -->
+      <rect x="0" y="0" width="38" height="34" rx="5" fill="#ef4444" stroke="#fca5a5" stroke-width="1"/>
+      <text x="19" y="22" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold" font-family="monospace">1</text>
+      
+      <!-- 8 bit üs -->
+      <rect x="48" y="0" width="180" height="34" rx="5" fill="#2563eb" stroke="#93c5fd" stroke-width="1"/>
+      <text x="138" y="22" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="monospace">1000 0010</text>
+      
+      <!-- 23 bit mantis -->
+      <rect x="238" y="0" width="455" height="34" rx="5" fill="#059669" stroke="#6ee7b7" stroke-width="1"/>
+      <text x="465" y="22" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" font-family="monospace">10110100000000000000000</text>
+      
+      <text x="705" y="22" fill="#94a3b8" font-size="12">(Gizli 1 saklanmaz)</text>
+    </g>
+  </g>
+
+  <!-- Alt Formül Şeridi -->
+  <g transform="translate(50, 566)">
+    <rect x="0" y="0" width="940" height="85" rx="10" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+    <g transform="translate(30, 26)">
+      <text x="0" y="0" fill="#fbbf24" font-size="13" font-weight="700">📌 IEEE 754 DEĞER FORMÜLÜ:</text>
+      <text x="0" y="32" fill="#ffffff" font-size="17" font-family="'Courier New', monospace" font-weight="bold">x = (-1)ˢ × (1.f)₂ × 2ᵉ⁻¹²⁷</text>
+    </g>
+    <line x1="470" y1="15" x2="470" y2="70" stroke="#334155" stroke-width="1.5" stroke-dasharray="4"/>
+    <g transform="translate(500, 26)">
+      <text x="0" y="0" fill="#38bdf8" font-size="13" font-weight="700">📖 DERS NOTUNDAKİ BİLİMSEL MODEL:</text>
+      <text x="0" y="32" fill="#ffffff" font-size="16" font-family="'Courier New', monospace" font-weight="bold">x = ± q × 2ᵐ   <tspan fill="#94a3b8" font-size="13">(½ ≤ q &lt; 1,  m ∈ ℤ)</tspan></text>
+    </g>
+  </g>
+</svg>
