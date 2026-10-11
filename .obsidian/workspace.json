@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "fe6dcf401002f32e",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ed5a2832e3d2d8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "221a1c04c9346f19",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Yeni sekme"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c971e51fefe7108c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7fa92a087193972",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ecff9fff0a668251",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dosya Gezgini"
+            }
+          },
+          {
+            "id": "deef2e13af191279",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ara"
+            }
+          },
+          {
+            "id": "97fed61696d5896c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Yer İmleri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fb26e2d19a00384e",
+    "type": "split",
+    "children": [
+      {
+        "id": "92f206c2f7ce093f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a1954327756abd8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Başlıksız.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Geri Bağlantılar"
+            }
+          },
+          {
+            "id": "97e02a1dbe1bf41e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Başlıksız.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Giden bağlantılar"
+            }
+          },
+          {
+            "id": "a8ab504a7e3e5119",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiketler"
+            }
+          },
+          {
+            "id": "fa5776c48a3c9b1f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tüm özellikler"
+            }
+          },
+          {
+            "id": "35dc6c2cdc58d7b0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Başlıksız.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Anahat"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Hızlı geçişi aç": false,
+      "graph:Grafik görünümünü aç": false,
+      "canvas:Yeni tuval oluşturun": false,
+      "daily-notes:Bugünün Notunu Aç": false,
+      "templates:Şablon ekle": false,
+      "command-palette:Komut paletini aç": false,
+      "bases:Yeni taban oluştur": false
+    }
+  },
+  "active": "221a1c04c9346f19",
+  "lastOpenFiles": [
+    "Veri_Yapileri.md",
+    "Isletim_Sistemleri.md",
+    "Istatistik_Olasılık.md",
+    "Nesneye_Yonelik.md",
+    "Sayisal_Yontemler.md",
+    "Mantik_Devreleri.md",
+    "Elektrik.md",
+    "XXX_DERS_PROGRAMI.md",
+    "Genel Notlar.md",
+    "Ders 4.md",
+    "Başlıksız.md",
+    "Başlıksız.base",
+    "Başlıksız.canvas",
+    "Hoş geldiniz.md"
+  ]
+}
