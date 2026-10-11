@@ -5,7 +5,7 @@
 #ders #donem3 #istatistik_olasilik
 
 > [!NOTE] 𝐾 Goodnotes PDF Defteri & El Yazmaları
-> - *Bu klasöre (İstatistik Ve Olasılık) henüz PDF eklenmedi.*
+> - [[istatistik.pdf]] 𝐾
 
 ---
 
