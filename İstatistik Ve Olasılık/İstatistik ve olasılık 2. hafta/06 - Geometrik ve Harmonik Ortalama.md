@@ -1,4 +1,4 @@
-# 06 - Geometrik ve Harmonik Ortalama
+	# 06 - Geometrik ve Harmonik Ortalama
 
 ← [[05 - Mod (Tepe Değer)|05 - Mod (Tepe Değer)]] | [[00 - 2. Hafta Çalışma Rehberi (MOC)|Rehbere Dön]]
 
